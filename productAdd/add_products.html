@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="product.js"></script>
+    <script src="add_products.js"></script>
+    <link rel="stylesheet" href="add_products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Product Upload</title>
+</head>
+<body>
+    <div class="header">
+        <div class="socialmedia-icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+        <div class="name">
+            ShopDekho
+        </div>
+    </div>
+    <div class="form-section">
+        <div class="box-1">
+            <div class="labels">
+                <label for="productName" class="text">Product Name :</label>
+                <label for="productManufacturer" class="text">Manufacturer Name :</label>
+                <label for="productPrice" class="text">Price :</label>
+            </div>
+            <div class="input-box">
+                <input type="text" id="productName" class="box">
+                <input type="text" id="productManufacturer" class="box">
+                <input type="number" id="productPrice" class="box">
+            </div>
+        </div>
+        <div class="box-2">
+            <form action="/productResult">
+                <button id="btnProductAdd" class="btn btn-secondary" style="font-size: 2rem;">Add</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>

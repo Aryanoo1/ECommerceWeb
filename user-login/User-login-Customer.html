@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="User-login-CustomerStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="user.js"></script>
+    <script src="add_user.js"></script>
+    <title>LOGIN</title>
+</head>
+<body>
+    <div class="name">
+        <p>ShopDekho</p>
+        <a>.com</a>
+    </div>
+    <div class="social-media-login">
+        <button>
+            <i class="fa-brands fa-google fa-flip" style="color: #ea4738;"></i>
+            Login Through Google
+        </button>
+        <br>
+        <button>
+            <i class="fa-brands fa-facebook fa-flip" style="color: #4b8bf5;"></i>
+            Login Through Facebook
+        </button>
+    </div>
+    <form action="/home" method="POST">
+        <div class="login">
+            <div class="firstbox">
+                <div class="box-name">
+                    <a>Name:</a>
+                    <a>Email:</a>
+                    <a>Password:</a>
+                </div>
+                <div class="box-values">
+                    <input class="box" id="name" type="name" placeholder="Enter Name">
+                    <input class="box" id="email" name="user" type="email" placeholder="Enter your Email Id">
+                    <input class="box" id="password" type="password" placeholder="Enter Password">
+                </div>
+            </div>
+            <div class="secondbox">
+                <div class="btn">
+                    <button type="submit" id="btn_login">LOGIN</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="footer"></div>
+</body>
+</html>

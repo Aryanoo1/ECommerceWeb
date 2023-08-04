@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+.header {
+    height: 70px;
+    background-color: darkslateblue;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.webName {
+    font-size: 2rem;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+.nav-address {
+    margin-right: 70px;
+}
+.add-first {
+    color: #cccccc;
+    font-size: 0.8rem;
+    margin-left: 15px;
+}
+.add-second{
+    font-size: 1rem;
+    margin-left: 3px;
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+.searchBar {
+    width: 600px;
+    height: 40px;
+    display: flex;
+    border-radius: 4px;
+}
+.search-input {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+}
+.search-input:focus {
+    border: 5px solid orange;
+}
+.search-icon {
+    width: 45px;
+    margin-right: 90px;
+}
+.search-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    background-color: blanchedalmond;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 2px;
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+}
+.search-btn:hover {
+    background-color: orange;
+}
+.userName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+    font-size: 1rem;
+    margin-right: 100px;
+}
+.cart i{
+    font-size: 2rem;
+}
+.cart {
+    font-size: 1.5rem;
+}
+.row {
+    height: auto;
+}
+.blocks {
+    height: 200px;
+    width: auto;
+    padding: 20px 30px 20px 30px;
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.block-img {
+    height: auto;
+    width: 30%;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid pink;
+    background-size: cover;    
+}
+.block-content {
+    height: auto;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+}
+.footer {
+    height: 50px;
+    background-color: darkslateblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.social-media {
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2.5rem;
+    margin-right: 20px;
+}
+.footer-content {
+    font-size: 2rem;
+}

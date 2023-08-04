@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="userInterface.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <script src="shop.js"></script>
+    <script src="add_shop.js"></script>
+    <!-- <script src="username.js"></script>
+    <script src="user_function.js"></script> -->
+</head>
+<body>
+    <div class="header">
+        <div class="webName border">
+            ShopDekho
+        </div>
+        <div class="nav-address border">
+            <p class="add-first">Deliver to</p>
+            <div class="add-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="add-second">India</p>
+            </div>
+        </div>
+        <form action="/userinterface" method="POST" style="display: inline;">
+            <div class="searchBar">
+                <input id="input" name="text_field" placeholder="Enter the Brand Here" class="search-input">
+                <div class="search-icon">
+                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </form>
+        <div class="userName" id="username">
+            <p>Hello,</p>
+            <p style="font-size: 1.3rem;">User</p>
+        </div>
+        <div class="cart border">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart
+        </div>
+    </div>
+    <div class="row" id="product-list">
+        
+    </div>
+    <div class="footer">
+        <div class="social-media">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+        <div class="footer-content">
+            :: Please Follow us on Social Media
+        </div>
+    </div>
+</body>
+</html>
