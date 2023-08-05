@@ -11,39 +11,47 @@
     <title>LOGIN</title>
 </head>
 <body>
-    <div class="name">
-        <p>ShopDekho</p>
-        <a>.com</a>
-    </div>
-    <div class="social-media-login">
-        <button>
-            <i class="fa-brands fa-google fa-flip" style="color: #ea4738;"></i>
-            Login Through Google
-        </button>
-        <br>
-        <button>
-            <i class="fa-brands fa-facebook fa-flip" style="color: #4b8bf5;"></i>
-            Login Through Facebook
-        </button>
-    </div>
-    <div class="login">
-        <div class="firstbox">
-            <div class="box-name">
-                <a>Email:</a>
-                <a>Password:</a>
-            </div>
-            <div class="box-values">
-                <input class="box" id="email" type="email" placeholder="Enter your Email Id">
-                <input class="box" id="password" type="password" placeholder="Enter Password">
-            </div>
+    <div class="section1">
+        <div class="social-media">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
         </div>
-        <div class="secondbox">
-            <div class="btn">
-                <form action="/addproduct">
-                    <button type="submit" id="btn_login">LOGIN</button>
-                </form>
-            </div>
+        <div class="website-name">
+            ShopDekho
         </div>
+        <i class="fa-solid fa-bars" style="font-size: 2rem; display: flex; justify-content: center; align-items: center;"></i>
+    </div>
+    <div class="section-middle">
+        <div class="social-media-login">
+            <button>
+                <i class="fa-brands fa-google fa-flip" style="color: #ea4738;"></i>
+                Login Through Google
+            </button>
+            <button>
+                <i class="fa-brands fa-facebook fa-flip" style="color: #4b8bf5;"></i>
+                Login Through Facebook
+            </button>
+        </div>
+        <form action="/addProduct">
+            <div class="login">
+                <div class="firstbox">
+                    <div class="box-name">
+                        <a>Email:</a>
+                        <a>Password:</a>
+                    </div>
+                    <div class="box-values">
+                        <input class="box" id="email" type="email" placeholder="Enter your Email Id">
+                        <input class="box" id="password" type="password" placeholder="Enter Password">
+                    </div>
+                </div>
+                <div class="secondbox">
+                    <div class="btn">
+                        <button type="submit" id="btn_login">LOGIN</button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
     <div class="footer"></div>
 </body>
