@@ -1,6 +1,13 @@
 const Sequelize = require('sequelize')
-const db = new Sequelize('shopweb', 'shopman', 'shoppass', {
-    host: 'localhost',
+// import {
+//     DB_HOST,DB_NAME,DB_PASSWORD,DB_USER
+// } from './config'
+const DB_NAME = require('./config').DB_NAME
+const DB_HOST = require('./config').DB_HOST
+const DB_PASSWORD = require('./config').DB_PASSWORD
+const DB_USER = require('./config').DB_USER
+const db = new Sequelize(DB_NAME,DB_USER,DB_PASSWORD, {
+    host: DB_HOST,
     dialect: 'mysql',
     pool: {
         min: 0,
