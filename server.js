@@ -1,7 +1,7 @@
 const express = require('express')
 // import {express} from 'express'
 const app = express()
-const PORT = require('./config').PORT
+const PORT = process.env.PORT
 // import {PORT} from './config.js'
 const path = require('path')
 app.use(express.json())

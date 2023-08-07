@@ -2,17 +2,13 @@ const Sequelize = require('sequelize')
 // import {
 //     DB_HOST,DB_NAME,DB_PASSWORD,DB_USER
 // } from './config'
-const DB_NAME = require('./config').DB_NAME
-const DB_HOST = require('./config').DB_HOST
-const DB_PASSWORD = require('./config').DB_PASSWORD
-const DB_USER = require('./config').DB_USER
-const db = new Sequelize(DB_NAME,DB_USER,DB_PASSWORD, {
-    host: DB_HOST,
-    dialect: 'mysql',
-    pool: {
-        min: 0,
-        max: 5
-    }
+const db = new Sequelize({
+    username: DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+    dialect: "mysql",
+    port: process.env.DB_PORT,
+    host: process.env.DB_HOST
 })
 const User = db.define('user', {
     id: {
