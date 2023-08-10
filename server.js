@@ -45,6 +45,6 @@ app.post("/userinterface", (req,res) => {
     }
     res.sendFile(__dirname + '/UserInterface/userInterface.html')
 })
-app.listen(PORT, () => {
+app.listen(PORT,"0.0.0.0", () => {
     console.log("Server Started at http://localhost:" + PORT)
 })
