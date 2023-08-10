@@ -5,5 +5,5 @@ const db = new Sequelize(urlDB,{
     dialect: 'mysql'
 })
 exports = module.exports = {
-    db
+    db, Sequelize
 }
