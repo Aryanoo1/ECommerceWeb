@@ -1,7 +1,6 @@
 const express = require('express')
-require("dotenv").server();
 const app = express()
-const PORT = process.env.MYSQLPORT
+const PORT = require('./config').port
 const path = require('path')
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
