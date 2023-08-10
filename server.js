@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-// const PORT = require('./config').port
+const PORT = require('./config').port
 const path = require('path')
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
@@ -45,6 +45,6 @@ app.post("/userinterface", (req,res) => {
     }
     res.sendFile(__dirname + '/UserInterface/userInterface.html')
 })
-app.listen(3360, () => {
-    console.log("Server Started at http://localhost:" + 3360)
+app.listen(PORT,"0.0.0.0", () => {
+    console.log("Server Started at http://localhost:" + PORT)
 })
