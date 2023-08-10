@@ -4,4 +4,6 @@ const urlDB = `mysql://${process.env.MYSQLUSER}:${process.env.MYSQLPASSWORD}@${p
 const db = new Sequelize(urlDB,{
     dialect: 'mysql'
 })
-module.exports = db;
+exports = module.exports = {
+    db
+}

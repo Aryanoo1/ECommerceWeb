@@ -1,7 +1,8 @@
 const express = require('express')
+require("dotenv").config();
 // import {express} from 'express'
 const app = express()
-const PORT = require('./config').PORT
+const PORT = process.env.MYSQLPORT
 // import {PORT} from './config.js'
 const path = require('path')
 app.use(express.json())

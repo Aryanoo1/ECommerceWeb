@@ -14,6 +14,7 @@
 //         max: 5
 //     }
 // })
+const db = require('./config').db;
 const User = db.define('user', {
     id: {
         type: Sequelize.INTEGER,
