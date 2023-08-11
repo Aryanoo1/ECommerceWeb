@@ -1,5 +1,8 @@
-const db = require('./config').db;
-const Sequelize = require('./config').Sequelize
+const Sequelize = require('sequelize')
+const urlDB = `mysql://${process.env.MYSQLUSER}:${process.env.MYSQLPASSWORD}@${process.env.MYSQLHOST}:${process.env.MYSQLPORT}/${process.env.MYSQLDATABASE}`;
+const db = new Sequelize(urlDB,{
+    dialect: 'mysql'
+})
 const User = db.define('user', {
     id: {
         type: Sequelize.INTEGER,
